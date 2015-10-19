@@ -81,7 +81,7 @@
     if (gridEl) {
         var content = gridEl.getAttribute('content');
         if (content) {
-            var reg = /([^=]+)=([\d\.\-]+)/g;
+            var reg = /,?([^=]+)=([\d\.\-]+)/g;
             var matched;
             var params = {};
             while (!!(matched = reg.exec(content))) {
